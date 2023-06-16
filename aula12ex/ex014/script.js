@@ -10,7 +10,7 @@ function carregar() {
         saudacao.innerHTML = 'BOM DIA!'
         img.src = 'imagens/manha.jpg'
         document.body.style.background = '#C9D0E3'
-    } else if (hora >= 12 && hora <= 18) {
+    } else if (hora >= 12 && hora < 18) {
         saudacao.innerHTML = 'BOA TARDE!'
         img.src = 'imagens/tarde.jpg'
         document.body.style.background = '#FE8753'
