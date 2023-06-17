@@ -1,46 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hora do Dia</title>
+    <title>Nível de inglês</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
-    <header>
-        <h1>Qual é o seu nível de inglês?</h1>
-    </header>
 
     <section>
 
-        <p>Coloque abaixo o número aproximado de palavras que você sabe.</p>
+        <div class="img"></div>
 
-        <div class="form"> 
+        <div class="container">
 
-            <div class="campo">
-                <input type="number" name="form" id="form" placeholder="Digite aqui">
+            <div class="form">
+                <h1>Qual é o seu nível de inglês?</h1>
+
+                <p>Coloque abaixo o número aproximado de palavras que você sabe.</p>
+
+                <div class="campo">
+                    <input type="number" name="form" id="form" placeholder="Digite aqui..">
+                </div>
+
+                <div class="btn">
+                    <input type="button" value="Verificar" onclick="verificar()">
+                </div>
+
+
+                <div id="res"> </div>
+
             </div>
-            
-            <div class="btn">
-                <input type="button" value="Verificar" onclick="verificar()">
-            </div>
-            
+
+            <p class="copy">&copy; Inglês com Pensadores</p>
+
         </div>
-
-        
-
-        <div id="res"> </div>
 
     </section>
 
-    <footer>
-        <p>&copy; Inglês com Pensadores</p>
-    </footer>
 
+    <!-- JAVASCRIPT -->
 
     <script src="script.js"></script>
 
 </body>
+
 </html>

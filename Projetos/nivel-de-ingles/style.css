@@ -1,11 +1,18 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     background: #88d6be;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-header h1 {
-    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1em;
 }
 
 section {
@@ -14,34 +21,90 @@ section {
     text-align: center;
     background: #12ae7e;
     border-radius: 10px;
-    padding: 20px;
+    transition: all 500ms ease-in;
 }
 
-.campo p, input {
-    margin-bottom: 10px;
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 400px;
+    transition: all 500ms ease-in;
+}
+
+.form h1 {
+    margin: 10px 0px;
+}
+
+.form p {
+    margin: 10px 0px;
+}
+
+.img {
+    width: 500px;
+    height: 300px;
+    border-radius: 10px 10px 0 0px;
+    background-size: cover;
+    background-image: url(../nivel-de-ingles/images/aprenderingles.jpg);
+    transition: all 500ms ease-in;
 }
 
 .campo input {
-    padding: 10px;
+    padding: 10px 0px;
     border: none;
     border-radius: 5px;
     outline: none;
+    text-align: center;
+    width: 100%;
+    font-size: 0.9em;
+    margin-bottom: 10px;
 }
 
 .btn input {
-    font-weight: bold;
     color: white;
-    padding: 10px;
+    padding: 15px;
     border: none;
     border-radius: 5px;
     background: black;
     cursor: pointer;
+    transition: all 300ms ease-in-out;
+    font-size: 1em;
+    margin-bottom: 10px;
 }
 
-#res {
-    margin-top: 10px;
+.btn input:hover {
+    font-weight: bold;
+    background: #88d6be;
+    color: black;
 }
 
-footer {
+.copy {
+    font-size: 0.9em;
     text-align: center;
+    margin: 20px 0px;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 500px) {
+    section {
+        width: 300px;
+    }
+
+    .img {
+        width: 300px;
+        background-position: center center;
+        object-fit: cover;
+    }
+
+    .form {
+        width: 200px;
+    }
 }
