@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Vamos adicionar novas palavras?</h1>
+   
+    <div class="container">
+
+       
+
+        <div class="campos">
+
+            <h2>Palavra</h2>
+            <input type="text" name="palavra" id="palavra">
+            <h2>Tradução</h2>
+            <input type="text" name="traducao" id="traducao">
+            <h2>Frase de exemplo</h2>
+            <input type="text" name="frase" id="frase">
+        
+        </div>
+
+    </div>
+
+
+<div class="button">
+    <button id="btn">Adicionar</button>
+</div>
+
+
+<h2>Sua lista de palavras</h2>
+
+<div class="palavras">
+
+    
+    <ul>
+    
+    </ul>
+</div>
+
+
+
+<script>
+
+var lista = document.querySelector('ul')
+var palavra = document.querySelector('#palavra')
+var traducao = document.querySelector('#traducao')
+var frase = document.querySelector('#frase')
+var botao = document.querySelector('#btn')
+
+botao.addEventListener('click' , function() {
+    var item = '<li>' + palavra.value + ' / ' + traducao.value + ' / ' + frase.value + '</li>'
+    lista.innerHTML = lista.innerHTML + item
+})
+    
+</script>
+
+
+</body>
+</html>

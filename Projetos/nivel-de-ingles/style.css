@@ -1,0 +1,47 @@
+body {
+    background: #88d6be;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header h1 {
+    text-align: center;
+}
+
+section {
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    background: #12ae7e;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.campo p, input {
+    margin-bottom: 10px;
+}
+
+.campo input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.btn input {
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: black;
+    cursor: pointer;
+}
+
+#res {
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+}
